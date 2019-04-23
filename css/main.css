@@ -18,13 +18,12 @@ html {
 
 /* Globals */
 a,
-p {
+.bar p {
     text-decoration: none;
     color: #f6f6f6;
 }
 
-h1,
-.site-footer p {
+h1 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -33,15 +32,59 @@ h1,
     margin: 0 auto;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
 /* Utilities */
 .no-margin {
     margin: 0;
 }
 
-/* Header */
-.site-header {
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    
+    .col-6 {
+        flex: 0 0 calc(50%);
+    }
+    
+    .col4 {
+        flex: 0 0 calc(33.3%)
+    }
+}
+
+.bg-color-dark {
     background-color: #373737;
 }
+
+.text-center {
+    text-align: center;
+}
+
+/* Botones */
+.btn {
+    color: #f6f6f6;
+    background-color: #373737;
+    border: none;
+    margin-top: 1rem;
+    padding: .8rem 1rem;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #373737;
+    background-color: #f6f6f6;
+    border: 1px solid #373737;
+}
+
+/* Header */
+
 
 /* Barra */
 .bar {
@@ -101,18 +144,55 @@ h1,
     }
     .image h1 {
         font-weight: 400;
+        margin-bottom: 4rem;
     }
 }
 
 /* SKILLS */
 /* Portfolio */
-.portfolio,
-.about,
-.contact {
-    background-color: red;
+.skills img {
+    height: 15rem;
+}
+
+.img-container {
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .skills img {
+        height: 35rem;
+    }
+}
+
+.about {
+    flex-direction: row-reverse
+}
+
+@media (min-width: 768px) {
+    .portfolio .img-container {
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    
+    .about .img-container {
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius:  5rem;
+    }
+    
+    .contact .img-container {
+        border-top-right-radius: 5rem;
+    }
+}
+
+.description {
+    padding: 5rem 0;    
+}
+
+.description p {
+    font-size: 1.5rem;
+    width: 65%;
+    margin: .5rem auto 0 auto;
+    line-height: 1.5;
 }
 
 /* Footer */
-.site-footer {
-    background-color: #373737;
-}
