@@ -17,7 +17,8 @@ html {
 */
 
 /* Globals */
-a {
+a,
+p {
     text-decoration: none;
     color: #f6f6f6;
 }
