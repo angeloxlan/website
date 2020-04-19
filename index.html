@@ -15,69 +15,104 @@
 
     <body>
         
-        <header class="site-header bg-color-dark">
-            <div class="container">
-                <div class="bar">
-                    <a href="#">Angel Aguirre</a>
-                    <div class="navigation">
-                        <a href="#">Portafolio</a>
-                        <a href="#">Acerca</a>
-                        <a href="#">Contacto</a>
-                    </div>
-                </div><!-- .bar -->
-            </div><!-- .container -->
+        <header class="site-header container">
+            <nav class="navigation">
+                <a href="#">Portafolio</a>
+                <a href="#">Acerca</a>
+                <a href="#">Contacto</a>
+            </nav>
         </header><!-- .site-header -->
         
-        <div class="container">
-            <div class="image">
-                <h1>full stack developer (jr)</h1>
-            </div><!-- main image -->
-        </div><!-- .container -->
+        <div class="hero position-left brackground-main">
+            <div class="description-odd">
+                <p class="title-text">
+                    Hello, I am <span class="bold-text">Angel Aguirre</span>
+                    I'm a <span class="bold-text">Software Engineer</span> -
+                    Backend Developer
+                </p>
+                <button class="btn-white">Let's talk</button>
+            </div>
+            <img class="img-odd" src="img/bg-1.png" alt="" srcset="img/bg-1.png 1x, img/bg-1-2x.png 2x">
+        </div>
 
-        <section class="skills">
-            <div class="portfolio grid text-center">
-                <div class="img-container col-6 bg-color-dark">
-                    <img src="img/work-img.svg" alt="Imagen Portafolio">
-                </div>
-                <div class="description col-6">
-                    <h2 class="no-margin">Desarrollador Web</h2>
-                    <p>HTML, CSS, JavaScript y PHP</p>
-                    <input type="button" value="Ver Más" class="btn">
-                </div>
-            </div><!-- .portfolio -->
-            <div class="about grid text-center">
-                <div class="img-container col-6 bg-color-dark">
-                    <img src="img/about-img.svg" alt="Imagen Acerca de">
-                </div>
-                <div class="description col-6">
-                    <h2 class="no-margin">Hola</h2>
-                    <p>mi nombre es Angel Aguirre y soy desarrollador web fullstack ubicado en Xalapa, Veracruz</p>
-                    <input type="button" value="Conóceme" class="btn">
-                </div>
-            </div><!-- .about -->
-            <div class="contact grid text-center">
-                <div class="img-container col-6 bg-color-dark">
-                    <img src="img/contact-img.svg" alt="Imagen Contacto">
-                </div>
-                <div class="description col-6">
-                    <h2 class="no-margin">¿Tienes una idea en mente?</h2>
-                    <p>¡Hagamosla realidad!</p>
-                    <input type="button" value="Contáctame" class="btn">
-                </div>
-            </div><!-- .contact -->
-        </section><!-- .skills -->
-        
-        <footer class="site-footer bg-color-dark">
-            <div class="container">
-                <div class="bar">
-                    <p>&copy; Derechos Reservados 2019</p>
-                    <div class="navigation">
-                        <a href="https://github.com/iangelo" target="_blank"><img src="img/github-brand.svg" alt="Github Logo"></a>
-                        <a href="https://www.instagram.com/angelo.lla/" target="_blank"><img src="img/instagram-brand.svg" alt="Instagram Logo"></a>
-                        <a href="https://twitter.com/angelo_lla" target="_blank"><img src="img/twitter-brand.svg" alt="Twitter"></a>
+        <div class="about position-right">
+            <img class="img-even" src="img/bg-2.png" alt="" srcset="">
+            <div class="description-even">
+                <p class="title-text">
+                    Passionate about
+                    software development and
+                    technology. I'm always
+                    learning new things as well
+                    as solving real world problems.
+                </p>
+                <button class="btn-gradient">About me</button>
+            </div>
+        </div>
+
+        <div class="web-dev position-left brackground-main">
+            <div class="description-odd">
+                <p class="title-text">
+                    <span class="bold-text">
+                        Website and API
+                        development
+                    </span>
+                    Building highly eficient
+                    web applications,
+                    websites and APIs.
+                </p>
+            </div>
+            <img class="img-odd" src="img/bg-3.png" alt="" srcset="">
+        </div>
+
+        <div class="projects position-right">
+            <img src="img/bg-4.png" alt="" class="img-even">
+            <div class="description-even">
+                <p class="title-text">
+                    Check out the projects
+                    that I've worked on.
+                </p>
+                <button class="btn-gradient">See more</button>
+            </div>
+        </div>
+
+        <div class="contact brackground-main">
+            <div class="description">
+                <p class="title-text">
+                    <span class="text-bold">
+                        Let's build something together
+                    </span>
+                    Feel free to mail me if you're
+                    looking for a developer or just
+                    want to connect.
+                </p>
+            </div>
+            <form class="form-group" action="" method="post">
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe">
                     </div>
-                </div><!-- .bar -->
-            </div><!-- .container -->
+                    <div class="form-label">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="john@doe.com">
+                    </div>                   
+                </div>
+                <div class="form-row">
+                    <label for="details">Aditional details (optional)</label>
+                    <textarea name="details" id="details" cols="15" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+        
+        <footer class="site-footer container">
+            <nav class="navigation">
+                <p>&copy; Derechos Reservados 2020</p>
+                <div class="">
+                    <a href="https://github.com/iangelo" target="_blank"><img src="img/github-brand.svg" alt="Github Logo"></a>
+                    <a href="https://www.instagram.com/angelo.lla/" target="_blank"><img src="img/instagram-brand.svg" alt="Instagram Logo"></a>
+                    <a href="https://twitter.com/angelo_lla" target="_blank"><img src="img/twitter-brand.svg" alt="Twitter"></a>
+                </div>
+            </nav>
         </footer><!-- .site-footer -->
     </body>
 </html>
