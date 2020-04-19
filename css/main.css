@@ -7,6 +7,14 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Baloo Bhaina 2', cursive;;
+}
+
+h3 {
+    margin: 0.7em 0;
+}
+
 a {
     font-size: 2em;
     text-decoration: none;
@@ -21,86 +29,90 @@ textarea {
     width: 100%;
 }
 
+button {
+    border: none;
+}
+
+
+
 /* 
+    font-family: 'Baloo Bhaina 2', cursive;
 
-    font-family: 'Open Sans', sans-serif;
-
-    font-family: 'Source Sans Pro', sans-serif;
-
+    font-family: 'Ubuntu', sans-serif;
 */
 
 /* Responsive aproach must be mobile first */
 
-/* Utilities */
+
+/* General classes */
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
-
 .brackground-main {
     background: linear-gradient(130deg, #22b799, #24639b);
 }
-
 .position-left {
     justify-content: left;
 }
-
 .position-right {
     justify-content: right;
 }
-
-.title-text {
+.mt-3em {
+    margin-top: 3em;
+}
+.m-auto {
+    margin: auto;
+}
+.main-text {
     color: #30384b;
 }
-
 .bold-text {
     color: #30384b;
     font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;;
 }
-
 .description-odd {
     font-size: 2.2em;
     width: 15em;
     margin-left: 1em;
-    margin-bottom: 15em;
+    margin-bottom: 10em;
+    margin-top: 4em;
 }
 .description-even {
     text-align: right;
     font-size: 2.2em;
     width: 15em;
-    margin-top: 3em;
-    margin-bottom: 15em;
+    margin-top: 4em;
+    margin-bottom: 10em;
     margin-right: 1em;
     margin-left: 1em;
 }
-
 .img-odd {
     position: absolute;
-    width: 50% !important;
+    width: 50%;
     max-width: 60%;
     min-width: 25%;
+    max-height: 100%;
     right: 0;
     bottom: 0;
 }
-
 .img-even {
     position: absolute;
     width: 50%;
     max-width: 60%;
     min-width: 25%;
+    max-height: 100%;
     left: 0;
     bottom: 0;
 }
-
 .btn-gradient {
     background: linear-gradient(to bottom, #22b799, #24639b);
     height: 1.6em;
     width: 6em;
-    margin-top: 3em;
     border-radius: 10px;
     color: #ffffff;
 }
-
 .btn-white {
     background-color: #ffffff;
     height: 1.6em;
@@ -111,7 +123,6 @@ textarea {
 }
 
 /* NAVIGATION Top-Bottom */
-
 .navigation {
     display: flex;
     justify-content: right;
@@ -125,12 +136,10 @@ textarea {
     z-index: 10;
     display: none;
 }
-
 .site-header nav.navigation {
     position: absolute;
     right: 0;
 }
-
 .site-header nav a {
     margin-left: 3em;
 }
@@ -138,16 +147,17 @@ textarea {
 /* Navigation Bottom */
 .site-footer {
     margin-top: -8em;
+    color: #ffffff
 }
-
+.site-footer .navigation {
+    justify-content: center;
+}
 .site-footer img {
     width: 15%;
 }
-
 .site-footer div {
     text-align: center;
 }
-
 .site-footer nav a {
     margin: 0 0.5em;
 }
@@ -163,28 +173,32 @@ textarea {
     min-height: 85vh;
     position: relative;
 }
-
 .contact {
-    font-size: 2.2em;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
+.contact .description {
+    font-size: 2.2em;
+    width: 13em;
+    margin: 2.5em 1em;
+}
 .form-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
     border-radius: 7px;
-    padding: 1em;
-    margin: 1em 1em 6em 1em
+    padding: 1em 1em 0 1em;
+    margin: 1em 1em 6em 1em;
+    font-size: 1.6em;
 }
-
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1em 0;
+}
 .form-label {
     margin-bottom: 1em;
-}
-
-.description {
-    width: 13em;
-    margin: 2.5em 1em;
 }
