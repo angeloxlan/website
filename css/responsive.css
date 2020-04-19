@@ -1,0 +1,80 @@
+/* 
+    Breakpoint: Landscape phones
+    576px and up
+*/
+@media (min-width: 576px) {
+    .contact .description {
+        width: 75%;
+        margin: 1.5em auto;
+    }
+}
+
+/*
+    Breakpoint: Tablets
+    768px and up
+*/
+@media (min-width: 768px) {
+    .description-odd,
+    .description-even,
+    .contact .description {
+        font-size: 3em;
+    }
+    .contact,
+    .description-odd {
+        padding-left: 1em;
+    }
+    .contact,
+    .description-even {
+        padding-right: 1em;
+    }
+}
+
+/*
+    Breakpoint: Desktop
+    992px and up
+*/
+@media (min-width: 992px) {
+    .description-odd,
+    .description-even,
+    .contact .description {
+        font-size: 3em;
+    }
+}
+
+/*
+    Breakpoint: Larger Desktops
+    1200px and up
+*/
+@media (min-width: 1200px) {
+    .hero,
+    .about,
+    .web-dev,
+    .projects {
+        min-height: 770px;
+    }
+    .description-odd.container,
+    .description-even.container {
+        margin: 0 5em;
+    }
+    .contact {
+        flex-direction: row;
+    }
+    .contact .description {
+        width: 50%;
+        margin: 1.5em 1.5em;
+    }
+    .description.container {
+        margin-left: 5em;
+    }
+    .form-group {
+        width: 50%;
+        margin: 3em 5em 6em 1em;
+    }
+    .form-row {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .form-label {
+        width: 100%;
+        margin: 0 1em 1em 1em;
+    }
