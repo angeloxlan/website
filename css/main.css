@@ -7,6 +7,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Baloo Bhaina 2', cursive;;
+}
+
 h3 {
     margin: 0.7em 0;
 }
@@ -32,9 +36,9 @@ button {
 
 
 /* 
+    font-family: 'Baloo Bhaina 2', cursive;
 
-    
-
+    font-family: 'Ubuntu', sans-serif;
 */
 
 /* Responsive aproach must be mobile first */
@@ -66,6 +70,7 @@ button {
 .bold-text {
     color: #30384b;
     font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;;
 }
 .description-odd {
     font-size: 2.2em;
