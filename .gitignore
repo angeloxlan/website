@@ -1,1 +1,3 @@
-.directory
+env/
+__pycache__
+media/
