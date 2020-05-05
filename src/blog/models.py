@@ -1,5 +1,8 @@
 from django.db import models
 
+#External import
+from ckeditor_uploader.fields import RichTextUploadingField
+
 # Create your models here.
 class Posts(models.Model):
     """
@@ -11,7 +14,7 @@ class Posts(models.Model):
     - Date for modification
     """
     title = models.CharField(max_length=50)
-    content = models.TextField()
+    content = RichTextUploadingField()
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 
