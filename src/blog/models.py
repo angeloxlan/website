@@ -13,7 +13,7 @@ class Posts(models.Model):
     - Date of creationg
     - Date for modification
     """
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=70)
     content = RichTextUploadingField()
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
