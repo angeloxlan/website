@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'blog/css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'blog/css/utilities.css' %}">
+        <link rel="stylesheet" href="{% static 'blog/css/responsive.css' %}">
+    </head>
+    <body>
+    <header class="container">
+        <div class="logo">
+            AngelAguirre
+        </div>
+        <div class="menu-icon">
+            <input type="checkbox" name="menu-btn" id="menu-btn">
+            <label for="menu-btn">
+                <img src="{% static '/blog/img/burger-button-icon.png' %}" alt="Menu button" srcset="">
+            </label>
+            <div class="side-menu">
+                <nav class="navigation">
+                    <a href="#">Home</a>
+                    <a href="{% url 'blog' %}">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+
+    <footer>
+        <div class="container">
+            <p>© Angel Aguirre 2020</p>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="{% static 'blog/js/blog.js' %}"></script>
+    </body>
+<html>

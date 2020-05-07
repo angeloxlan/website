@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+html,body {
+    min-height: 100%;
+    height: 100%;
+}
+
+/* GENERAL */
+body {
+    font-size: 1.8em;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    height: 5em;
+}
+a {
+    color: #000;
+}
+h1, h2 {
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+h3, h4, h5, h6 {
+    margin: 1em 0 0.3em 0;
+}
+p {
+    line-height: 1.5em;
+}
+hr {
+    margin-top: 1em;
+    color: #ececec;
+}
+
+/* HEADER */
+header > .navigation {
+    display: none;
+}
+header.container {
+    margin: 0 1em 0em 1em;
+}
+.menu-icon img {
+    width: 1.8em;
+}
+.menu-icon input {
+    display: none;
+}
+
+/* Post View */
+.container-post h1.title {
+    font-size: 2.1em;
+    margin: 0 0 0.2em 0;
+    text-align: left;
+}
+.container-post img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.container-post .title ~ p {
+    margin-bottom: 0.5em;
+    color: #969696;
+}
+.container-post li {
+    margin: 8px 0;
+}
+
+/* Side menu navigation */
+.side-menu {
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+.side-menu::after {
+    content: '';
+    opacity: 0;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.side-menu .navigation {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    right: 0;
+    background-color: #fff;
+    z-index: 10;
+    transition: ease-in-out;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.side-menu > .navigation > a {
+    margin-top: 3em;
+    display: none;
+}
+#menu-btn:checked ~ .side-menu {
+    visibility: visible;
+}
+#menu-btn:checked ~ .side-menu::after {
+    opacity: 0.5;
+}
+#menu-btn:checked ~ .side-menu .navigation {
+    width: 65vw;
+}
+#menu-btn:checked ~ .side-menu a{
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    margin-top: 4em;
+    padding: 2em 0;
+    width: 100%;
+    height: 5.5em;
+}
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+footer .container a {
+    color: #ffffff;
+}
+
+/* Posts Preview Section */
+.post-preview a {
+    text-decoration: none;
+}
+.container.post-preview h2 {
+    padding-top: 1em;
+}
+.container.posts,
+.container.post {
+    min-height: calc(100vh - 5em - 5.5em - 4em);/* header-footer-margintopfooter*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container.post {
+    justify-content: start;
+}
+div.pagination {
+    display: flex;
+    justify-content: space-around;
+}
