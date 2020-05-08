@@ -12,9 +12,16 @@ html,body {
     height: 100%;
 }
 
+:root {
+    --dark-mode-back: #ffffff;
+    --dark-mode-text: #000000;
+}
+
 /* GENERAL */
 body {
     font-size: 1.8em;
+    background-color: var(--dark-mode-back);
+    color: var(--dark-mode-text);
 }
 header {
     display: flex;
@@ -23,7 +30,7 @@ header {
     height: 5em;
 }
 a {
-    color: #000;
+    color: var(--dark-mode-text);
 }
 h1, h2 {
     margin-bottom: 0.3em;
@@ -71,13 +78,19 @@ header.container {
 .container-post li {
     margin: 8px 0;
 }
+.container-post.content h1, h2 {
+    margin-top: 1em;
+}
 
 /* Side menu navigation */
+.menu-icon .navigation {
+    display: none;
+}
 .side-menu {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     top: 0;
     right: 0;
 }
@@ -87,28 +100,30 @@ header.container {
     top: 0;
     right: 0;
     background-color: #000;
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     transition: ease-in-out;
     transition-duration: 0.5s;
     transition-delay: 0s;
 }
 .side-menu .navigation {
-    position: absolute;
+    visibility: hidden;
+    position: fixed;
     width: 0;
-    height: 100vh;
+    height: 100%;
     right: 0;
-    background-color: #fff;
+    background-color: var(--dark-mode-back);
     z-index: 10;
     transition: ease-in-out;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-delay: 0s;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.side-menu > .navigation > a {
+.side-menu > .navigation a,
+.side-menu > .navigation > span {
     margin-top: 3em;
     display: none;
 }
@@ -120,10 +135,42 @@ header.container {
 }
 #menu-btn:checked ~ .side-menu .navigation {
     width: 65vw;
+    visibility: visible;
 }
-#menu-btn:checked ~ .side-menu a{
+#menu-btn:checked ~ .side-menu a,
+#menu-btn:checked ~ .side-menu > .navigation > span {
     display: block;
 }
+.side-menu .navigation input {
+    display: none;
+}
+.side-menu .navigation label > span {
+    text-align: start;
+    width: 38px;
+    display: inline-block;
+    height: 20px;
+    background-color: #969696;
+    border-radius: 20px;
+    margin-left: 1em;
+}
+.side-menu .navigation label span > span {
+    display: inline-block;
+    background-color: #454545;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: ease;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+#dark-mode:checked ~ span label > span > span {
+    margin-left: 1em;
+}
+.menu-icon label svg {
+    margin-top: -0.6em;
+    fill: var(--dark-mode-text)
+}
+
 
 /* FOOTER */
 footer {

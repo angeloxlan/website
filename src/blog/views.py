@@ -13,7 +13,7 @@ def blog(request, page=1):
     # Change evert date_created field to the format 'Jan 1, 2020'
     for post in posts:
         post.date_created = post.date_created.strftime('%b %d, %Y')
-    
+
     # Create the paginator with the number of posts per page
     paginator = Paginator(posts, 5)
 
