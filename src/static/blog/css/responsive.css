@@ -27,21 +27,36 @@
     .container {
         margin: 0 auto;
     }
+    .logo img {
+        margin-top: -2em;
+    }
+    header.container {
+        font-size: 1.2em;
+    }
     .menu-icon label {
         display: none;
+    }
+    .menu-icon > .navigation label {
+        display: inline-block;
     }
     .menu-icon > .navigation {
         display: block;
     }
-    .menu-icon > .navigation a {
+    .menu-icon > .navigation a,
+    .menu-icon > .navigation > span {
         margin-left: 2.5em;
     }
     .container-post {
         margin: 0 auto;
     }
+    .menu-icon > .navigation label > span {
+        margin-left: 0.5em;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    header {
+        justify-content: space-between;
+    }
 }

@@ -27,7 +27,7 @@
                 {% url 'blog_pages' 1 %}" class="not-active">
             {% endif %}
         prev</a>
-        <a href="">{{ blog_content.number }}</a>
+        <span>{{ blog_content.number }}</span>
         <a href="
             {% if blog_content.has_next %}
                 {% url 'blog_pages' blog_content.next_page_number %}">

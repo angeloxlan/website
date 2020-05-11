@@ -13,7 +13,9 @@
     <body>
     <header class="container">
         <div class="logo">
-            AngelAguirre
+            <a href="{% url 'index' %}">
+                <img src="{% static 'blog/img/logo.svg' %}" alt="Angel Aguirre Logo">
+            </a>
         </div>
         <div class="menu-icon">
             <input type="checkbox" name="menu-btn" id="menu-btn">
@@ -23,6 +25,13 @@
             <nav class="navigation">
                 <a href="#">Home</a>
                 <a href="{% url 'blog' %}">Blog</a>
+                <input id="dark-mode-wide" type="checkbox" name="dark-mode">
+                <span>
+                    Dark mode
+                    <label for="dark-mode-wide">
+                        <span><span></span></span>
+                    </label>
+                </span>
             </nav>
             <div class="side-menu">
                 <nav class="navigation">

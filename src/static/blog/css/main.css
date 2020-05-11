@@ -83,6 +83,11 @@ header.container {
 }
 
 /* Side menu navigation */
+.logo img {
+    width: 100px;
+    height: 110px;
+    margin-top: -2.5em;
+}
 .menu-icon .navigation {
     display: none;
 }
@@ -144,6 +149,7 @@ header.container {
 .side-menu .navigation input {
     display: none;
 }
+.menu-icon > .navigation label > span,
 .side-menu .navigation label > span {
     text-align: start;
     width: 38px;
@@ -153,6 +159,7 @@ header.container {
     border-radius: 20px;
     margin-left: 1em;
 }
+.menu-icon > .navigation label > span >span,
 .side-menu .navigation label span > span {
     display: inline-block;
     background-color: #454545;
@@ -162,6 +169,9 @@ header.container {
     transition: ease;
     transition-duration: 0.5s;
     transition-delay: 0s;
+}
+#dark-mode-wide:checked ~ span label > span > span {
+    margin-left: 0.9em;
 }
 #dark-mode:checked ~ span label > span > span {
     margin-left: 1em;
