@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Angel Aguirre{% block title %}{% endblock title %}</title>
+
+        {% load static %}
+        <!-- CSS IMPORTS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2:400,700|Ubuntu:400,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="{% static 'index/css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'index/css/responsive.css' %}">
+    </head>
+
+    <body>
+        
+        <header class="site-header container">
+            <div class="logo">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'index/img/logo.svg' %}" alt="Angel Aguirre Logo">
+                </a>
+            </div>
+            <div>
+                <input type="checkbox" name="menu-btn" id="menu-btn">
+                <label for="menu-btn">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="40px" height="40px"><path d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z"/></svg>
+                    <div>
+                    </div>
+                </label>
+                <nav class="navigation">
+                    <a href="{% url 'portfolio' %}">Portfolio</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'blog' %}">Blog</a>
+                </nav>
+            </div>
+        </header><!-- .site-header -->
+
+        {% block content %}
+        {% endblock content %}
+
+        <footer class="site-footer container">
+            <nav class="navigation">
+                <p>&copy; Angel Aguirre 2020</p>
+                <div class="">
+                    <a href="https://github.com/angel-lla" target="_blank"><img src="{% static 'index/img/github-brand.svg' %}" alt="Github Logo"></a>
+                    <a href="https://www.instagram.com/angelo.lla/" target="_blank"><img src="{% static 'index/img/instagram-brand.svg' %}" alt="Instagram Logo"></a>
+                    <a href="https://twitter.com/angelo_lla" target="_blank"><img src="{% static 'index/img/twitter-brand.svg' %}" alt="Twitter"></a>
+                </div>
+            </nav>
+        </footer><!-- .site-footer -->
+        
+    </body>
+</html>

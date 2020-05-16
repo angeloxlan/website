@@ -19,11 +19,17 @@ from django.urls import include, path, re_path
 # Imports to make to uploaded files work
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic.base import TemplateView
+
+# Importing the portfolio module
+from .static_portfolio import ProjectsView
 
 urlpatterns = [
+    path('', TemplateView.as_view(template_name='static_pages/index.html'), name='index'),
+    path('about/', TemplateView.as_view(template_name='static_pages/about.html'), name='about'),
+    path('portfolio/', ProjectsView.as_view(), name='portfolio'),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-#urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
