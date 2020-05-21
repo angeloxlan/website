@@ -13,6 +13,9 @@
     .project .project-img {
         top: 0.6em;
     }
+    .timeline {
+        flex-direction: row;
+    }
 }
 
 /*
@@ -40,8 +43,20 @@
     .project {
         flex-direction: row;
     }
+    .project:first-child {
+        padding-top: 3em;
+    }
     .project .project-img {
-        top: 0.8em;
+        top: 0.5em;
+    }
+    .project .img-container {
+        width: 75%;
+    }
+    .about-info p {
+        margin-top: 2em;
+    }
+    .timeline {
+        font-size: 1.4em;
     }
 }
 

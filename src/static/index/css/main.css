@@ -92,6 +92,9 @@ div.mt-4em,
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;;
 }
+.text-600 {
+    font-weight: 600;
+}
 .description-odd {
     font-size: 2.2em;
     width: 15em;
@@ -283,11 +286,16 @@ div.mt-4em,
 }
 
 
-/* PORTFOLIO */
-.projects-container {
+/* Section container for Portfolio/About */
+.section-container {
     min-height: calc(100vh);
     padding: 12em 0;
     background: linear-gradient(to bottom, #22b799, #24639b);
+}
+
+/* PORTFOLIO */
+.project:first-child {
+    padding-top: 0;
 }
 .project {
     display: flex;
@@ -323,8 +331,72 @@ div.mt-4em,
     height: 100%;
     width: 100%;
     position: relative;
-    z-index: 20;
+    z-index: 5;
 }
-.projects-container .project:last-child {
+.section-container .project:last-child {
     border: none;
+}
+
+/* ABOUT */
+.about-info {
+    font-size: 2em;
+}
+.about-info p {
+    margin: 0 2em 2em 2em;
+}
+.about-info ul {
+    margin-left: 1em;
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    color: #30384b;
+    margin-bottom: 4em;
+    padding-top: 3em;
+    border-bottom: 1px solid;
+}
+.timeline:last-child {
+    border: none;
+}
+.timeline > h2 {
+    margin: 0 0 0 2em;
+    font-size: 2.5em;
+    width: 30%;
+}
+.timeline ul {
+    list-style: none;
+    margin-top: 0;
+    padding-right: 2em;
+}
+.timeline ul li {
+    position: relative;
+}
+.timeline ul li::before {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.timeline ul li::after {
+    content: '';
+    background-color: #fff;
+    width: 1px;
+    position: absolute;
+    height: 85%;
+    top: 1em;
+    left: 0.7em;
+}
+.timeline ul div {
+    padding-left: 3em;
+    min-height: 13em;
+}
+.timeline ul h2 {
+    font-size: 1.7em;
+    margin-bottom: 0;
+}
+.timeline ul p {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
