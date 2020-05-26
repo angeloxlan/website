@@ -12,14 +12,23 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+# Aditional imports
+import json
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+# LOADING CREDENTIALS
+project_credentials = dict()
+# Opening json file with the necesary credentials
+with open("credentials.json") as credentials_file:
+    project_credentials = json.load(credentials_file)
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tf=-_!d)7@vbb_mc&mg7*me4-&82$4i-f7j$=*01)ah06)7mns'
+SECRET_KEY = project_credentials["secret_key"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,9 +38,6 @@ ALLOWED_HOSTS = ['*']
 # MEDIA Settings
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'
-
-# CKEDITOR Settings
-CKEDITOR_UPLOAD_PATH = 'blog/'
 
 # Application definition
 
@@ -43,13 +49,25 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #Additional apps
-    'ckeditor',
-    'ckeditor_uploader',
+    #External apps
+    'tinymce',
 
     #My apps
-    'blog'
+    'blog',
 ]
+
+# TINYMCE Config
+TINYMCE_DEFAULT_CONFIG = {
+    'selector': 'textarea',
+    'plugins': 'link image preview codesample contextmenu table code',
+    'toolbar1': 'formatselect |bold italic underline | alignleft aligncenter alignright alignjustify '
+               '| bullist numlist | outdent indent | table | link image | codesample | preview code',
+    'contextmenu': 'formats | link image',
+    'menubar': False,
+    'inline': False,
+    'statusbar': True,
+    'height': 360,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

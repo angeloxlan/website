@@ -1,7 +1,7 @@
 from django.db import models
 
 #External import
-from ckeditor_uploader.fields import RichTextUploadingField
+from tinymce.models import HTMLField
 
 # Create your models here.
 class Posts(models.Model):
@@ -14,7 +14,7 @@ class Posts(models.Model):
     - Date for modification
     """
     title = models.CharField(max_length=70)
-    content = RichTextUploadingField()
+    content = HTMLField()
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 

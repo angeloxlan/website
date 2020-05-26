@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path, re_path
+from django.urls import include, path
 
 # Imports to make to uploaded files work
 from django.conf import settings
@@ -30,6 +30,6 @@ urlpatterns = [
     path('portfolio/', ProjectsView.as_view(), name='portfolio'),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    path('tinymce/', include('tinymce.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
