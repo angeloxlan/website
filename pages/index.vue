@@ -1,8 +1,5 @@
 <template>
-    <div>
-        angelaguirre.dev
-    </div>
+    <div>angelaguirre.dev</div>
 </template>
 
-<script>
-</script>
+<script></script>
