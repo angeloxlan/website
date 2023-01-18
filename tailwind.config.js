@@ -8,6 +8,9 @@ module.exports = {
                 'usr-soft-red': '#DBBEBE',
                 'usr-blue': '#151E29',
             },
+            minHeight: {
+                100: '25rem',
+            },
         },
     },
     plugins: [],

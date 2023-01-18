@@ -1,3 +1,39 @@
 body {
-    @apply bg-usr-blue;
+    @apply bg-usr-blue text-white;
+}
+
+.nuxt-link-active {
+    @apply relative text-white;
+}
+
+.nuxt-link-active:before {
+    content: '>';
+    position: absolute;
+    top: -0.35rem;
+    transform: translateX(-15px);
+}
+
+.side-menu-enter-active,
+.side-menu-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.side-menu-enter,
+.side-menu-leave-to {
+    opacity: 0;
+}
+
+.side-width-enter-active,
+.side-width-leave-active {
+    transition: width 0.3s ease;
+}
+
+.side-width-enter,
+.side-width-leave-to {
+    width: 0;
+}
+
+.side-width-enter-to,
+.side-width-leave {
+    @apply w-64;
 }
