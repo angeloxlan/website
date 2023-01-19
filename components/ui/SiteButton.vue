@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .action-btn {
     @apply bg-usr-soft-red w-fit min-w-[6rem] rounded-lg hover:scale-110 transition duration-300 ease-in-out;
 

@@ -25,7 +25,11 @@
         <section class="experience">
             <h2># Professional Experience</h2>
             <div class="jobs-container">
-                <JobDescription v-for="job in jobs.slice().reverse()" :key="job.id" v-bind="job" />
+                <JobDescription
+                    v-for="job in jobs.slice().reverse()"
+                    :key="job.id"
+                    v-bind="job"
+                />
             </div>
         </section>
     </main>
@@ -56,7 +60,13 @@ export default {
                     company: 'SOLIX México',
                     description:
                         'I was responsible for the maintenance of legacy applications built in PHP and Laravel, while also developing web applications using HTML, Bootstrap, vanilla JavaScript, and creating RESTful APIs using PHP.',
-                    tags: ['PHP', 'Laravel', 'Javascript', 'Bootstrap', 'MySQL'],
+                    tags: [
+                        'PHP',
+                        'Laravel',
+                        'Javascript',
+                        'Bootstrap',
+                        'MySQL',
+                    ],
                 },
                 {
                     id: 3,
@@ -67,7 +77,14 @@ export default {
                     company: 'Centro Estatal de Información - SSP',
                     description:
                         'My current work involves developing web apps using HTML, CSS, Javascript and PHP, and maintaining legacy systems built in PHP. I am also implementing Python to automate common tasks.',
-                    tags: ['PHP', 'Javascript', 'Python', 'Bootstrap', 'MySQL', 'SQL Server'],
+                    tags: [
+                        'PHP',
+                        'Javascript',
+                        'Python',
+                        'Bootstrap',
+                        'MySQL',
+                        'SQL Server',
+                    ],
                 },
             ],
         }

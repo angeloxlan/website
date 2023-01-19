@@ -59,15 +59,15 @@ export default {
             isSidemenuOpen: false,
         }
     },
+    watch: {
+        $route(to, from) {
+            this.isSidemenuOpen = false
+        },
+    },
     methods: {
         toggleSidemenu() {
             this.isSidemenuOpen = !this.isSidemenuOpen
         },
-    },
-    watch: {
-        $route(to, from) {
-            this.isSidemenuOpen = false;
-        }
     },
 }
 </script>
