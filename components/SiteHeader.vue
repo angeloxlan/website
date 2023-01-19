@@ -64,6 +64,11 @@ export default {
             this.isSidemenuOpen = !this.isSidemenuOpen
         },
     },
+    watch: {
+        $route(to, from) {
+            this.isSidemenuOpen = false;
+        }
+    },
 }
 </script>
 

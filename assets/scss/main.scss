@@ -2,11 +2,11 @@ body {
     @apply bg-usr-blue text-white;
 }
 
-.nuxt-link-active {
+.nuxt-link-exact-active {
     @apply relative text-white;
 }
 
-.nuxt-link-active:before {
+.nuxt-link-exact-active:before {
     content: '>';
     position: absolute;
     top: -0.35rem;
