@@ -119,6 +119,10 @@ header {
                 li.logo {
                     @apply absolute left-0 text-white;
                 }
+
+                a.nuxt-link-exact-active {
+                    @apply ml-[15px];
+                }
             }
         }
     }
