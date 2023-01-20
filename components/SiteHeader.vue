@@ -23,7 +23,12 @@
                     <Transition name="side-width">
                         <nav v-show="isSidemenuOpen" class="navbar">
                             <ul>
-                                <li class="logo">Angel Aguirre</li>
+                                <li class="logo">
+                                    <img
+                                        src="@/assets/img/logo.svg"
+                                        alt="Angel Aguirre Logo"
+                                    />
+                                </li>
                                 <li><NuxtLink to="/">/ home</NuxtLink></li>
                                 <li>
                                     <NuxtLink to="/about">/ about-me</NuxtLink>
@@ -44,7 +49,12 @@
         <div class="desktop-navbar">
             <nav class="navbar">
                 <ul>
-                    <li class="logo">Angel Aguirre</li>
+                    <li class="logo">
+                        <img
+                            src="@/assets/img/logo.svg"
+                            alt="Angel Aguirre Logo"
+                        />
+                    </li>
                     <li><NuxtLink to="/">/ home</NuxtLink></li>
                     <li><NuxtLink to="/about">/ about-me</NuxtLink></li>
                     <li><NuxtLink to="/work">/ my-work</NuxtLink></li>
@@ -78,7 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    @apply py-5 text-lg font-bold text-slate-400;
+    @apply py-8 text-lg font-bold text-slate-400;
 
     div.mobile-navbar {
         @apply relative md:hidden;
@@ -102,7 +112,11 @@ header {
                 @apply flex flex-col justify-center gap-2 w-64 px-5 py-8;
 
                 li.logo {
-                    @apply text-2xl text-white;
+                    @apply flex justify-center text-2xl text-white;
+
+                    img {
+                        @apply w-14;
+                    }
                 }
 
                 li:not(.logo) {
@@ -122,6 +136,10 @@ header {
 
                 li.logo {
                     @apply absolute left-0 text-white;
+
+                    img {
+                        @apply w-14;
+                    }
                 }
 
                 a.nuxt-link-exact-active {
