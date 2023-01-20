@@ -1,7 +1,11 @@
 <template>
     <header>
         <div class="mobile-navbar">
-            <button class="burger-icon" @click="toggleSidemenu">
+            <button
+                class="burger-icon"
+                aria-label="Burger menu"
+                @click="toggleSidemenu"
+            >
                 <svg class="w-8" fill="none" viewBox="0 0 78 62">
                     <path
                         fill="#FBFBFB"

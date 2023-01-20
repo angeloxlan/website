@@ -20,7 +20,7 @@
                     staying ahead of the curve in the industry.
                 </p>
                 <UiSiteButton>
-                    <NuxtLink to="/about">more</NuxtLink>
+                    <NuxtLink to="/about">more about me</NuxtLink>
                 </UiSiteButton>
             </div>
         </section>
@@ -38,7 +38,7 @@
                     projects I have worked on.
                 </p>
                 <UiSiteButton>
-                    <NuxtLink to="/work">more</NuxtLink>
+                    <NuxtLink to="/work">my projects</NuxtLink>
                 </UiSiteButton>
             </div>
         </section>
@@ -51,7 +51,7 @@
                 contact details on the following links.
             </p>
             <UiSiteButton>
-                <NuxtLink to="/contact">more</NuxtLink>
+                <NuxtLink to="/contact">let's chat</NuxtLink>
             </UiSiteButton>
         </section>
         <!-- end-contact -->
