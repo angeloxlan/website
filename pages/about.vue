@@ -102,25 +102,25 @@ main {
         @apply md:mt-16;
 
         h2 {
-            @apply text-2xl font-bold mb-2;
+            @apply font-jetbrains font-bold text-2xl mb-2;
             @apply md:text-3xl;
         }
 
         p {
-            @apply relative ml-4;
+            @apply font-sourcecode relative ml-4;
         }
 
         p:before {
             content: '>';
             position: absolute;
-            top: -0.25rem;
+            top: -0.1rem;
             transform: translateX(-15px);
         }
     }
 
     section.experience {
         h2 {
-            @apply text-2xl font-bold mb-2;
+            @apply font-jetbrains font-bold text-2xl mb-2;
             @apply md:text-3xl;
         }
 

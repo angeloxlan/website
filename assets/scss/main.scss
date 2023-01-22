@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700;800&family=Source+Code+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
 body {
     @apply bg-usr-blue text-white;
 }
@@ -9,7 +11,7 @@ body {
 .nuxt-link-exact-active:before {
     content: '>';
     position: absolute;
-    top: -0.35rem;
+    top: -0.2rem;
     transform: translateX(-15px);
 }
 

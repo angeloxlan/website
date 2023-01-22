@@ -15,6 +15,6 @@ export default {
 
 <style lang="scss">
 footer {
-    @apply text-center text-sm py-5;
+    @apply font-jetbrains text-center text-xs py-5;
 }
 </style>

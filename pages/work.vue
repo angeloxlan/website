@@ -79,18 +79,18 @@ main {
         @apply md:mt-16;
 
         h2 {
-            @apply text-2xl font-bold mb-2;
+            @apply font-jetbrains font-bold text-2xl mb-2;
             @apply md:text-3xl;
         }
 
         p {
-            @apply relative ml-4;
+            @apply font-sourcecode relative ml-4;
         }
 
         p:before {
             content: '>';
             position: absolute;
-            top: -0.25rem;
+            top: -0.1rem;
             transform: translateX(-15px);
         }
     }
@@ -111,14 +111,18 @@ main {
                 @apply relative flex flex-col justify-around p-3 bg-usr-soft-red/[.8] w-5/6 rounded-lg min-h-[200px] -top-14;
 
                 h3 {
-                    @apply font-bold;
+                    @apply font-jetbrains font-bold;
+                }
+
+                .project-description {
+                    @apply font-sourcecode text-sm;
                 }
 
                 .project-tags {
                     @apply flex flex-wrap gap-2;
 
                     .tag {
-                        @apply text-sm text-slate-700;
+                        @apply font-sourcecode text-xs text-slate-700;
                     }
                 }
 
@@ -126,7 +130,7 @@ main {
                     @apply flex gap-6 justify-center;
 
                     a {
-                        @apply underline;
+                        @apply font-sourcecode underline;
                     }
                 }
             }

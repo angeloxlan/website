@@ -72,12 +72,12 @@ main {
             @apply md:left-20 md:relative md:bottom-0;
 
             h1 {
-                @apply text-3xl font-bold mb-2;
+                @apply font-jetbrains font-bold text-3xl mb-2;
                 @apply md:text-6xl;
             }
 
             p {
-                @apply text-sm;
+                @apply font-sourcecode text-sm;
                 @apply md:text-lg;
             }
         }
@@ -95,12 +95,12 @@ main {
             @apply flex flex-col justify-center items-center gap-3 absolute bottom-0 text-center z-10;
 
             h2 {
-                @apply text-3xl font-bold mb-2;
+                @apply font-jetbrains font-bold text-3xl mb-2;
                 @apply md:text-6xl;
             }
 
             p {
-                @apply text-sm text-center mx-auto;
+                @apply font-sourcecode text-sm text-center mx-auto;
                 @apply md:text-lg md:text-left md:w-1/3;
             }
         }
@@ -119,12 +119,12 @@ main {
             @apply md:relative md:bottom-0 md:w-1/3;
 
             h2 {
-                @apply text-3xl font-bold mb-2;
+                @apply font-jetbrains font-bold text-3xl mb-2;
                 @apply md:text-6xl;
             }
 
             p {
-                @apply text-sm text-center mx-auto;
+                @apply font-sourcecode text-sm text-center mx-auto;
                 @apply md:text-lg md:text-left;
             }
         }
@@ -139,13 +139,13 @@ main {
         @apply flex flex-col flex-auto gap-4 items-center justify-center text-center min-h-100;
 
         h2 {
-            @apply text-3xl font-bold mb-2;
+            @apply font-jetbrains font-bold text-3xl mb-2;
             @apply md:text-6xl;
         }
 
         p {
-            @apply text-sm text-center mx-auto;
-            @apply md:text-lg md:text-left;
+            @apply font-sourcecode text-sm text-center mx-auto w-2/3;
+            @apply md:text-lg;
         }
     }
 }

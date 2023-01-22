@@ -29,15 +29,15 @@
                                         alt="Angel Aguirre Logo"
                                     />
                                 </li>
-                                <li><NuxtLink to="/">/ home</NuxtLink></li>
+                                <li><NuxtLink to="/">/home</NuxtLink></li>
                                 <li>
-                                    <NuxtLink to="/about">/ about-me</NuxtLink>
+                                    <NuxtLink to="/about">/about-me</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink to="/work">/ my-work</NuxtLink>
+                                    <NuxtLink to="/work">/my-work</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink to="/contact">/ contact</NuxtLink>
+                                    <NuxtLink to="/contact">/contact</NuxtLink>
                                 </li>
                             </ul>
                         </nav>
@@ -55,10 +55,10 @@
                             alt="Angel Aguirre Logo"
                         />
                     </li>
-                    <li><NuxtLink to="/">/ home</NuxtLink></li>
-                    <li><NuxtLink to="/about">/ about-me</NuxtLink></li>
-                    <li><NuxtLink to="/work">/ my-work</NuxtLink></li>
-                    <li><NuxtLink to="/contact">/ contact</NuxtLink></li>
+                    <li><NuxtLink to="/">/home</NuxtLink></li>
+                    <li><NuxtLink to="/about">/about-me</NuxtLink></li>
+                    <li><NuxtLink to="/work">/my-work</NuxtLink></li>
+                    <li><NuxtLink to="/contact">/contact</NuxtLink></li>
                 </ul>
             </nav>
         </div>
@@ -88,7 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    @apply py-8 text-lg font-bold text-slate-400;
+    @apply font-jetbrains font-bold py-8 text-lg text-slate-400;
 
     div.mobile-navbar {
         @apply relative md:hidden;

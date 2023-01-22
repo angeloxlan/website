@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     content: [],
     theme: {
@@ -10,6 +12,16 @@ module.exports = {
             },
             minHeight: {
                 100: '25rem',
+            },
+            fontFamily: {
+                jetbrains: [
+                    "'JetBrains Mono'",
+                    ...defaultTheme.fontFamily.sans,
+                ],
+                sourcecode: [
+                    "'Source Code Pro'",
+                    ...defaultTheme.fontFamily.sans,
+                ],
             },
         },
     },

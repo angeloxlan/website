@@ -47,7 +47,7 @@ main {
     @apply md:w-3/4;
 
     h2 {
-        @apply text-2xl font-bold mb-2;
+        @apply font-jetbrains font-bold text-2xl mb-2;
         @apply md:text-3xl md:mt-16;
     }
 
@@ -56,18 +56,18 @@ main {
         @apply md:flex-row;
 
         p {
-            @apply relative ml-4;
+            @apply font-sourcecode relative ml-4;
         }
 
         p:before {
             content: '>';
             position: absolute;
-            top: -0.25rem;
+            top: -0.1rem;
             transform: translateX(-15px);
         }
 
         .links {
-            @apply flex flex-col gap-4 w-full font-bold text-lg;
+            @apply font-jetbrains flex flex-col gap-4 w-full font-bold text-lg;
 
             .social-media {
                 @apply underline;

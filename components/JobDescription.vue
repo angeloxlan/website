@@ -42,7 +42,7 @@ export default {
         @apply md:flex-row md:gap-4;
 
         h3 {
-            @apply font-bold;
+            @apply font-sourcecode font-bold;
         }
 
         .line {
@@ -59,20 +59,24 @@ export default {
         }
 
         .period {
-            @apply text-sm italic;
+            @apply font-sourcecode text-sm italic;
         }
     }
 
     .experience-title:before {
         content: '>';
         position: absolute;
-        top: -0.25rem;
+        top: -0.1rem;
         transform: translateX(-15px);
     }
 
     .experience-place {
-        @apply flex flex-col justify-start text-sm;
+        @apply font-sourcecode flex flex-col justify-start text-sm;
         @apply md:flex-row md:gap-8;
+    }
+
+    .experience-description {
+        @apply font-sourcecode;
     }
 
     .experience-tags {
