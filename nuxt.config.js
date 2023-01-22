@@ -39,6 +39,7 @@ export default {
         '@nuxtjs/eslint-module',
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/google-fonts',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,4 +47,20 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
+
+    googleFonts: {
+        display: 'swap',
+        download: true,
+        base64: true,
+        overwriting: true,
+        families: {
+            'JetBrains+Mono': {
+                wght: [400],
+            },
+            'Source+Code+Pro': {
+                wght: [400],
+                ital: [400],
+            },
+        }
+    },
 }
