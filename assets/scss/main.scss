@@ -2,11 +2,11 @@ body {
     @apply bg-usr-blue text-white;
 }
 
-.nuxt-link-exact-active {
+.router-link-exact-active {
     @apply relative text-white;
 }
 
-.nuxt-link-exact-active:before {
+.router-link-exact-active:before {
     content: '>';
     position: absolute;
     top: -0.2rem;
@@ -18,7 +18,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.side-menu-enter,
+.side-menu-enter-from,
 .side-menu-leave-to {
     opacity: 0;
 }
@@ -28,12 +28,12 @@ body {
     transition: width 0.3s ease;
 }
 
-.side-width-enter,
+.side-width-enter-from,
 .side-width-leave-to {
     width: 0;
 }
 
 .side-width-enter-to,
-.side-width-leave {
+.side-width-leave-from {
     @apply w-64;
 }

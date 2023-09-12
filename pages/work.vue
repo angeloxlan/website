@@ -38,35 +38,29 @@
     </main>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            projects: [
-                {
-                    id: 1,
-                    name: 'Pomodoro',
-                    description:
-                        'Designed specifically for the Pomodoro Technique, this web app offers a timer to enhance your productivity.',
-                    image: require('@/assets/img/projects/frame_pomodoro.png'),
-                    tags: ['Vue.JS', 'TailwindCSS', 'Pinia'],
-                    liveLink: 'https://pomodoro.angelaguirre.dev',
-                    codeLinks: ['https://github.com/angeloxlan/pomodoro'],
-                },
-                {
-                    id: 2,
-                    name: 'Movies Library',
-                    description:
-                        'This movie library allows you to explore a wide range of popular and upcoming films, making it easy to find new titles to watch.',
-                    image: require('@/assets/img/projects/frame_movies.png'),
-                    tags: ['Vue.JS', 'Vue-Router', 'TailwindCSS', 'Pinia'],
-                    liveLink: 'https://movies.angelaguirre.dev',
-                    codeLinks: ['https://github.com/angeloxlan/movies'],
-                },
-            ],
-        }
+<script setup>
+const projects = ref([
+    {
+        id: 1,
+        name: 'Pomodoro',
+        description:
+            'Designed specifically for the Pomodoro Technique, this web app offers a timer to enhance your productivity.',
+        image: '/img/projects/frame_pomodoro.png',
+        tags: ['Vue.JS', 'TailwindCSS', 'Pinia'],
+        liveLink: 'https://pomodoro.angelaguirre.dev',
+        codeLinks: ['https://github.com/angeloxlan/pomodoro'],
     },
-}
+    {
+        id: 2,
+        name: 'Movies Library',
+        description:
+            'This movie library allows you to explore a wide range of popular and upcoming films, making it easy to find new titles to watch.',
+        image: '/img/projects/frame_movies.png',
+        tags: ['Vue.JS', 'Vue-Router', 'TailwindCSS', 'Pinia'],
+        liveLink: 'https://movies.angelaguirre.dev',
+        codeLinks: ['https://github.com/angeloxlan/movies'],
+    },
+])
 </script>
 
 <style lang="scss" scoped>

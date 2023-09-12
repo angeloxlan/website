@@ -15,11 +15,13 @@ module.exports = {
             },
             fontFamily: {
                 jetbrains: [
-                    "'JetBrains Mono'", 'monospace',
+                    "'JetBrains Mono'",
+                    'monospace',
                     ...defaultTheme.fontFamily.sans,
                 ],
                 sourcecode: [
-                    "'Source Code Pro'", 'monospace',
+                    "'Source Code Pro'",
+                    'monospace',
                     ...defaultTheme.fontFamily.sans,
                 ],
             },

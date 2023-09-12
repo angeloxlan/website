@@ -1,16 +1,10 @@
 <template>
     <div class="layout-default">
         <SiteHeader />
-        <Nuxt />
+        <NuxtPage />
         <SiteFooter />
     </div>
 </template>
-
-<script>
-export default {
-    name: 'LayoutDefault',
-}
-</script>
 
 <style lang="scss">
 .layout-default {
