@@ -142,7 +142,7 @@ header {
                     }
                 }
 
-                a.nuxt-link-exact-active {
+                a.router-link-exact-active {
                     @apply ml-[15px];
                 }
             }
