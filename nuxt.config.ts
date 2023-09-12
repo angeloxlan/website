@@ -24,6 +24,7 @@ export default defineNuxtConfig({
             ],
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
         },
+        pageTransition: { name: 'page', mode: 'out-in' },
     },
     css: ['@/assets/scss/main.scss'],
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
