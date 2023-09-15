@@ -35,61 +35,53 @@
     </main>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            jobs: [
-                {
-                    id: 1,
-                    title: 'Backend Developer',
-                    periodStart: 'jul 2018',
-                    periodEnd: 'jan 2019',
-                    place: 'Ver, México',
-                    company: 'Universidad de Xalapa',
-                    description:
-                        'I created a new module for an existing system that allows for the seamless replication of information across multiple information systems.',
-                    tags: ['C#', 'SQL Server', 'PostgreSQL'],
-                },
-                {
-                    id: 2,
-                    title: 'Frontend - Backend Developer',
-                    periodStart: 'may 2019',
-                    periodEnd: 'now 2019',
-                    place: 'Ver, México',
-                    company: 'SOLIX México',
-                    description:
-                        'I was responsible for the maintenance of legacy applications built in PHP and Laravel, while also developing web applications using HTML, Bootstrap, vanilla JavaScript, and creating RESTful APIs using PHP.',
-                    tags: [
-                        'PHP',
-                        'Laravel',
-                        'Javascript',
-                        'Bootstrap',
-                        'MySQL',
-                    ],
-                },
-                {
-                    id: 3,
-                    title: 'Full Stack Developer',
-                    periodStart: 'jan 2021',
-                    periodEnd: 'Present',
-                    place: 'Ver, México',
-                    company: 'Centro Estatal de Información - SSP',
-                    description:
-                        'My current work involves developing web apps using HTML, CSS, Javascript and PHP, and maintaining legacy systems built in PHP. I am also implementing Python to automate common tasks.',
-                    tags: [
-                        'PHP',
-                        'Javascript',
-                        'Python',
-                        'Bootstrap',
-                        'MySQL',
-                        'SQL Server',
-                    ],
-                },
-            ],
-        }
+<script setup>
+useHead({
+    title: 'About Me',
+})
+
+const jobs = ref([
+    {
+        id: 1,
+        title: 'Backend Developer',
+        periodStart: 'jul 2018',
+        periodEnd: 'jan 2019',
+        place: 'Ver, México',
+        company: 'Universidad de Xalapa',
+        description:
+            'I created a new module for an existing system that allows for the seamless replication of information across multiple information systems.',
+        tags: ['C#', 'SQL Server', 'PostgreSQL'],
     },
-}
+    {
+        id: 2,
+        title: 'Frontend - Backend Developer',
+        periodStart: 'may 2019',
+        periodEnd: 'now 2019',
+        place: 'Ver, México',
+        company: 'SOLIX México',
+        description:
+            'I was responsible for the maintenance of legacy applications built in PHP and Laravel, while also developing web applications using HTML, Bootstrap, vanilla JavaScript, and creating RESTful APIs using PHP.',
+        tags: ['PHP', 'Laravel', 'Javascript', 'Bootstrap', 'MySQL'],
+    },
+    {
+        id: 3,
+        title: 'Full Stack Developer',
+        periodStart: 'jan 2021',
+        periodEnd: 'Present',
+        place: 'Ver, México',
+        company: 'Centro Estatal de Información - SSP',
+        description:
+            'My current work involves developing web apps using HTML, CSS, Javascript and PHP, and maintaining legacy systems built in PHP. I am also implementing Python to automate common tasks.',
+        tags: [
+            'PHP',
+            'Javascript',
+            'Python',
+            'Bootstrap',
+            'MySQL',
+            'SQL Server',
+        ],
+    },
+])
 </script>
 
 <style lang="scss" scoped>

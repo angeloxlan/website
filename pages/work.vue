@@ -39,6 +39,10 @@
 </template>
 
 <script setup>
+useHead({
+    title: 'Work',
+})
+
 const projects = ref([
     {
         id: 1,

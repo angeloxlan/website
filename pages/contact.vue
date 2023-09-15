@@ -41,6 +41,12 @@
     </main>
 </template>
 
+<script setup>
+useHead({
+    title: 'Contact',
+})
+</script>
+
 <style lang="scss" scoped>
 main {
     @apply flex flex-col gap-6 max-w-[768px] min-h-[75vh] w-11/12 mx-auto mb-16;
