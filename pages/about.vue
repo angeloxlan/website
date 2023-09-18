@@ -3,20 +3,19 @@
         <section class="description">
             <h2># Who am I?</h2>
             <p>
-                As a backend developer, I have been working in web development
-                for 4 years. My expertise includes Javascript, Vue.js, PHP,
-                Python and SQL. I am always looking to learn and try new
-                technologies, as I am passionate about coding and
-                self-improvement.
+                As a backend developer, I have worked in web development for 4
+                years. My expertise includes Javascript, Vue.js, PHP, Python,
+                and SQL. I am always looking to learn and try new technologies,
+                as I am passionate about coding and self-improvement.
             </p>
             <p>
-                When I am not working, I can be found playing video games as a
-                hobby.
+                When I am not working, I can be found playing video games or
+                reading as a hobby.
             </p>
             <p>
-                If you have a project that you think I could help with, please
-                don't hesitate to
-                <NuxtLink to="/contact">reach out and let's discuss</NuxtLink>
+                If you have a project that I could help with, please don't
+                hesitate to
+                <NuxtLink to="/contact">reach out and discuss</NuxtLink>
                 it further.
             </p>
         </section>
@@ -60,7 +59,7 @@ const jobs = ref([
         place: 'Ver, México',
         company: 'SOLIX México',
         description:
-            'I was responsible for the maintenance of legacy applications built in PHP and Laravel, while also developing web applications using HTML, Bootstrap, vanilla JavaScript, and creating RESTful APIs using PHP.',
+            'I was responsible for the maintenance of legacy applications built in PHP and Laravel, while also developing web applications using HTML, Bootstrap, and vanilla JavaScript. I also developed RESTful APIs using PHP.',
         tags: ['PHP', 'Laravel', 'Javascript', 'Bootstrap', 'MySQL'],
     },
     {
@@ -71,7 +70,7 @@ const jobs = ref([
         place: 'Ver, México',
         company: 'Centro Estatal de Información - SSP',
         description:
-            'My current work involves developing web apps using HTML, CSS, Javascript and PHP, and maintaining legacy systems built in PHP. I am also implementing Python to automate common tasks.',
+            'I am responsible for creating Python scripts to automate corporate tasks, designing tools for data management across multiple databases, and creating web-based applications to streamline processes, enhance data visualization, and support informed decision-making. Additionally, I am improving the performance and functionality of legacy systems through maintenance and feature implementations.',
         tags: [
             'PHP',
             'Javascript',
@@ -107,6 +106,10 @@ main {
             position: absolute;
             top: -0.1rem;
             transform: translateX(-15px);
+        }
+
+        a {
+            @apply underline font-bold;
         }
     }
 

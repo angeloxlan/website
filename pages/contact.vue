@@ -3,8 +3,9 @@
         <h2># Contact</h2>
         <section class="contact">
             <p class="description">
-                Do you have a proposal or a business idea? You can send me and
-                email or send me a message on any of my social media accounts.
+                Do you have a proposal or a business idea? Feel free to get in
+                touch via email or drop me a message through any of my social
+                media profiles.
             </p>
             <div class="links">
                 <a href="mailto:hello@angelaguirre.dev"

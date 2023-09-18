@@ -10,7 +10,11 @@
         </section>
 
         <section class="projects">
-            <div v-for="project in projects" :key="project.id" class="project">
+            <div
+                v-for="project in projects.slice().reverse()"
+                :key="project.id"
+                class="project"
+            >
                 <img :src="project.image" />
                 <div class="project-info">
                     <h3># {{ project.name }}</h3>
@@ -106,7 +110,7 @@ main {
             }
 
             .project-info {
-                @apply relative flex flex-col justify-around p-3 bg-usr-soft-red/[.8] w-5/6 rounded-lg min-h-[200px] -top-14;
+                @apply relative flex flex-col justify-around p-3 backdrop-blur-sm bg-usr-soft-red/[.8] w-5/6 rounded-lg min-h-[200px] -top-14;
 
                 h3 {
                     @apply font-jetbrains font-bold;

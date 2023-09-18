@@ -45,14 +45,12 @@
         <!-- end-my-work -->
 
         <section class="contact">
-            <h2>Let's build something together</h2>
-            <p>
-                If you're interested in working together, you can find my
-                contact details on the following links.
-            </p>
-            <UiSiteButton>
-                <NuxtLink to="/contact">let's chat</NuxtLink>
-            </UiSiteButton>
+            <div class="description">
+                <h2>Let's build something together</h2>
+                <UiSiteButton>
+                    <NuxtLink to="/contact">let's chat</NuxtLink>
+                </UiSiteButton>
+            </div>
         </section>
         <!-- end-contact -->
     </main>
@@ -136,16 +134,20 @@ main {
     }
 
     .contact {
-        @apply flex flex-col flex-auto gap-4 items-center justify-center text-center min-h-100;
+        @apply flex flex-col items-center justify-center;
 
-        h2 {
-            @apply font-jetbrains font-bold text-3xl mb-2;
-            @apply md:text-6xl;
-        }
+        .description {
+            @apply flex flex-col flex-auto gap-4 items-center justify-center w-1/2 text-center min-h-100;
 
-        p {
-            @apply font-sourcecode text-sm text-center mx-auto w-2/3;
-            @apply md:text-lg;
+            h2 {
+                @apply font-jetbrains font-bold text-3xl mb-2;
+                @apply md:text-6xl;
+            }
+
+            p {
+                @apply font-sourcecode text-sm text-center mx-auto w-2/3;
+                @apply md:text-lg;
+            }
         }
     }
 }
