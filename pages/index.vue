@@ -5,12 +5,12 @@
                 <h1>Angel Aguirre</h1>
                 <p>SOFTWARE ENGINEER, BACKEND DEVELOPER</p>
             </div>
-            <img src="@/assets/img/programming-bro.svg" alt="Hero" />
+            <img src="@/assets/img/programming-bro.svg" alt="Hero" loading="lazy"/>
         </section>
         <!-- end-hero -->
 
         <section class="about-me">
-            <img src="@/assets/img/code-typing-pana.svg" alt="About me" />
+            <img src="@/assets/img/code-typing-pana.svg" alt="About me" loading="lazy"/>
             <div class="description">
                 <h2>About Me</h2>
                 <p>
@@ -27,7 +27,7 @@
         <!-- end-about-me -->
 
         <section class="my-work">
-            <img src="@/assets/img/hand-coding-bro.svg" alt="My work" />
+            <img src="@/assets/img/hand-coding-bro.svg" alt="My work" loading="lazy"/>
             <div class="description">
                 <h2>My Work</h2>
                 <p>

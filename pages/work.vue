@@ -15,7 +15,7 @@
                 :key="project.id"
                 class="project"
             >
-                <img :src="project.image" />
+                <img :src="project.image" loading="lazy"/>
                 <div class="project-info">
                     <h3># {{ project.name }}</h3>
                     <p class="project-description">
