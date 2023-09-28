@@ -2,6 +2,8 @@
 
 This project is my personal website to showcase my skills as a software developer.
 
+You can visit my website [here](https://angelaguirre.dev).
+
 ## Getting Started
 
 ## Development
