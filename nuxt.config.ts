@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         pageTransition: { name: 'page', mode: 'out-in' },
     },
     css: ['@/assets/scss/main.scss'],
-    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', 'nuxt-gtag'],
     googleFonts: {
         display: 'swap',
         download: true,
